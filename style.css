@@ -1,0 +1,140 @@
+/* Main */
+
+* {
+  padding: 0;
+  margin: 0;
+ }
+
+ body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  background: rgb(117,117,117);
+  background: linear-gradient(90deg, rgba(117,117,117,1) 0%, rgba(255,255,255,1) 50%, rgba(117,117,117,1) 100%);
+}
+
+section {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+
+section {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+/* Main Image Box */
+/* ***************************************************** */
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 500px;
+}
+
+#photo {
+  width: 100%;
+}
+
+.gray-container {
+  color: white;
+  width: 800px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0,0,0, 0.5);
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+}
+
+.photo-title {
+  margin: 10px;
+}
+
+#photo-description {
+  margin: 0 10px 10px 10px;
+}
+
+/* Arrow "button"*/
+/* ***************************************************** */
+
+.arrows {
+  display: flex;
+  width: 60px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;;
+  background-color: rgb(209, 205, 205);
+  cursor: pointer;
+}
+
+.arrows img {
+ width: 25px;
+}
+
+.turnArrow {
+  rotate: -180deg;
+}
+
+.arrows img:hover {
+  opacity: 0.3;
+}
+
+/* Thumbnail Container */
+/* ***************************************************** */
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  margin: 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(150,150,150,1) 100%);
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
+  margin: 0px 5px;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.active {
+  margin: 0px 5px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 8px 10px;
+}
+
+.hiddenTitle {
+  position: absolute;
+  display: none;
+  background: rgba(0,0,0, .5); 
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  top: -50px;
+}
+
+.box:hover .hiddenTitle {
+  position: absolute;
+  display: block;
+  width: 120px;
+  align-items: center;
+  left: -22.5px;
+}
